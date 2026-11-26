@@ -1,165 +1,147 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Saya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
 
-    <!-- Style Css -->
+  <!-- Penunjuk halaman di sisi kanan -->
+  <nav class="side-dots" aria-label="Navigasi halaman">
+    <a href="#beranda" data-label="Profil"></a>
+    <a href="#projek" data-label="Projek"></a>
+    <a href="#saran" data-label="Saran"></a>
+    <a href="#kontak" data-label="Instagram"></a>
+  </nav>
 
-    <link rel="stylesheet" href="style.css">
+  <!-- ===== HALAMAN 1: PROFIL ===== -->
+  <section id="beranda" class="page">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <p class="hello">Halo, perkenalkan saya</p>
+          <h1 class="display-name">NAUFAL TRIO SAPUTRA</h1>
+          <p class="lead-text">Siswa Rekayasa Perangkat Lunak yang suka membangun hal kecil menjadi aplikasi yang berguna.</p>
 
-    <title>portofolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body id="Home">
-    <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top bg-cream">
-  <div class="container">
-    <a class="navbar-brand" href="#">Naufal Trio Saputra</a>
+          <dl class="profile-list">
+            <div><dt>Sekolah</dt><dd>SMKN 5 Malang</dd></div>
+            <div><dt>Kelas</dt><dd>XI RPL 3</dd></div>
+            <div><dt>Tempat, tanggal lahir</dt><dd>Malang, 12 november 2009</dd></div>
+            <div><dt>Hobi</dt><dd>baca komik,main game</dd></div>
+            <div><dt>Cita-cita</dt><dd>Software developer</dd></div>
+            <div><dt>Email</dt><dd>Naufaltriosaputra@gmail.com</dd></div>
+          </dl>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <p class="about">saya adalah seorang pelajar biasa yang tidak begitu mahir menggunakan coding.yang saya kuasai adalah html dasar php dan juga css.yang inggi saya capai hanya lulus dengan nilai terbaik .</p>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-        </li>
+          <div class="skills">
+            <span>HTML</span><span>CSS</span><span>php</span><span>Bootstrap</span><span>Figma</span>
+          </div>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#About">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#Projects">Projects</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#Contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- Akhir Navbar -->
-
-<!-- Jumbotron -->
-
- <section class="jumbotron text-center">
-    <img src="img/WhatsApp Image 2026-08-06 at 12.47.30.jpeg" alt="Kucing penguasa Eropa" width="200" class="rounded-circle img-thumbnail">
-  <h1 class="display-4">Naufal Trio Saputra</h1>
-  <p class="lead">Programmer pemula</p>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L40,144C80,128,160,96,240,106.7C320,117,400,171
-    ,480,181.3C560,192,640,160,720,138.7C800,117,880,107,960,138.7C1040,171,1120,245,1200,256C1280,267,1360,213,1400,186.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
- </section>
-
-<!-- Akhir Jumbotron -->
-
-<!-- About -->
-<section id="About">
-    <div class="continer">
-        <div class="row text-center mb-3">
-            <div class="col">
-                <h2>About me</h2>
-            </div>
+          <button class="btn-next" data-target="#projek">Lanjutkan</button>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-            <div class="col-md-4">
-            <p>haii,saya naufal trio saputra
-              ,saya seorang siswa kelas 11 yangg memilih jurusan pengembangan
-               perangkat lunak dan game (pplg),saya bersekolah di SMKN 5 malang,
-               saya seorang programmer pemula/baru belajar,saya memiliki minat yang
-                kuat untuk belajar dan berkembang memperluas ilmu dan wawasan,
-               mendapatkan relasi yang banya di SMKN 5 malang dan sekitarnyaa.</p>
-            </div>
-            <div class="col-md-4">
-            <p>tujuan saya memilih jurusan pengembangan perangkat lunak dan game (PPLG) adalah untukk tau dan paham cara membuat website dan mengembangkan project mandiri,saya akan terus belajar
-               dan mengembangkan cara berfikir saya supaya bisa menyelesaikan masalah yang rumit dengan mudah.</p>
-            </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 text-center">
+          <div class="photo-frame">
+            <img src="images/foto-profil.jpg.jpeg" onerror="this.onerror=null;this.src='images/profil-placeholder.svg'" alt="Foto profil">
+          </div>
         </div>
+      </div>  
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1"
-       d="M0,96L48,122.7C96,149,192,203,288,197.3C384,192,480,128,576,117.3C672,107,768,149,864,138.7C960,128,1056,64,1152,48C1248,32,1344,64,1392,80L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-</section>
-<!-- Akhir About -->
+  </section>
 
-<!-- Project -->
-<section id="projects">
-  <div class="container">
-    <div class="row text-center mb-3">
-      <div class="col">
-        <h2>My Projects</h2>
+  <!-- ===== HALAMAN 2: PROJEK ===== -->
+  <section id="projek" class="page">
+    <div class="container">
+      <h2 class="page-title">Projek dan prestasi</h2>
+      <p class="page-sub">Klik salah satu untuk melihat isinya.</p>
+
+      <div class="row g-4 mt-1">
+        <div class="col-md-6">
+          <button class="project-card" data-key="prestasi">
+            <img src="images/WhatsApp Image 2026-11-25 at 19.59.25.jpeg" onerror="this.onerror=null;this.src='images/placeholder.svg'" alt="">
+            <span class="project-body">
+              <strong>Prestasi</strong>
+              <small>kegiatan, piagam,dan penghargaan yang pernah saya raih.</small>
+            </span>
+          </button>
+        </div>
+        <div class="col-md-6">
+          <button class="project-card" data-key="rpl">
+            <img src="images/rpl.jpg" onerror="this.onerror=null;this.src='images/placeholder.svg'" alt="">
+            <span class="project-body">
+              <strong>Projek RPL</strong>
+              <small>tugas guru tamu,mock up.</small>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <button class="btn-next mt-5" data-target="#saran">Lanjutkan</button>
+    </div>
+  </section>
+
+  <!-- ===== HALAMAN 3: SARAN ===== -->
+  <section id="saran" class="page">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7">
+          <h2 class="page-title">Saran dan unjuk rasa</h2>
+          <p class="page-sub">Tulis kesan, kritik, atau saran untuk portofolio ini.</p>
+
+          <form id="formSaran" class="glass p-4" novalidate>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" required>
+            </div>
+            <div class="mb-3">
+              <label for="kelas" class="form-label">Kelas</label>
+              <input type="text" class="form-control" id="kelas" name="kelas" placeholder="Contoh: XII RPL 1" required>
+            </div>
+            <div class="mb-3">
+              <label for="catatan" class="form-label">Catatan</label>
+              <textarea class="form-control" id="catatan" name="catatan" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-next" id="btnKirim">Kirim catatan</button>
+            <div id="statusForm" class="mt-3" role="status"></div>
+          </form>
+
+          <button class="btn-next btn-ghost mt-4" data-target="#kontak">Lanjutkan</button>
+        </div>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-md-4 mb-3">
-        <div class="card">
-  <img src="img/WhatsApp Image 2026-08-03 at 14.56.32.jpeg" class="card-img-top" alt="project 1">
-  <div class="card-body">
-    <p class="card-text">koordinator sie giat dalam kegiatan bakti kampus bersama teman' dan kakak' dewan ambalan</p>
-  </div>
-      </div>
+  </section>
+
+  <!-- ===== PALING BAWAH: INSTAGRAM ===== -->
+  <section id="kontak" class="page page-end">
+    <div class="container text-center">
+      <h2 class="page-title">Mari terhubung</h2>
+      <p class="page-sub">Ikuti kegiatan dan karya saya di Instagram.</p>
+      <a class="btn-ig" href="https://www.instagram.com/@NOFALTRIO/" target="_blank" rel="noopener">@NOFALTRIO</a>
+      <div class="mt-5"><button class="btn-next btn-ghost" data-target="#beranda">Kembali ke atas</button></div>
+      <p class="foot">&copy; BY Naufaltriosaputra</p>
     </div>
-      <div class="col-md-4 mb-3">
-        <div class="card">
-  <img src="img/WhatsApp Image 2026-08-03 at 14.47.21.jpeg" class="card-img-top" alt="project 2">
-  <div class="card-body">
-    <p class="card-text">ketua pelaksana dalam kegiatan penerimaan tamu ambalan</p>
-  </div>
-      </div>
-    </div>
-    <div class="col-md-4 mb-3">
-      <div class="card">
-  <img src="img/WhatsApp Image 2026-08-03 at 13.25.45.jpeg" class="card-img-top" alt="project 3">
-  <div class="card-body">
-  <p class="card-text">angota dalam kegiatan bakti lebaran bersama anggota polisi dan tni</p>
-    </div>
-  </div>
-    </div>  
-  </div>
-  </div>
-</div>
-</section>
+  </section>
 
-
-
-<!-- Akhir Projects -->
-
-<!-- contact -->
-<!-- Contact -->
-<section id="Contact" class="py-5">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col">
-        <h2>Contact Me</h2>
-        <p>Hubungi saya melalui Instagram</p>
-
-        <a href="https://www.instagram.com/nofaltrio/"
-           target="_blank"
-           class="btn btn-danger"> https://www.instagram.com/nofaltrio?igsh=OXRtanJvaW9sdnE=
-        </a>
+  <!-- Jendela isi projek -->
+  <div class="modal fade" id="modalProjek" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalJudul"></h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body" id="modalIsi"></div>
       </div>
     </div>
   </div>
-</section>
-<!-- akhir contact -->
-<!-- footer -->
- <footer class="bg-primary text-white text-center pb-3">
-  <p>creatred with love by <a href="https://www.instagram.com/zealryuka" class="text-white fw-bold">enggar saktiawan</a></p>
- </footer>
-<!-- akhir footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
